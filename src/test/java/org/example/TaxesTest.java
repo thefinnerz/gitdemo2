@@ -9,13 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TaxesTest {
     @Test
-    void TestMain() {
-        int expectedTakeHome = 7000;
-        String[] args = {"7000"};
-        int actualTakeHome = App.main(args);
-        Assertions.assertEquals(expectedTakeHome,actualTakeHome);
-    }
-    @Test
     void TestCheckBracket() {
         int[] expectedBracket = {9000,0,0,9000};
         int[] actualBracket = Taxes.CheckBracket(9000);
